@@ -1,13 +1,3 @@
-/**********************************************************************************************************
- * 解答入力欄のコンポーネントです。入力欄・送信ボタン・エラーメッセージを表示します。
- * <answer-input v-bind:correct="解答" v-on:answer-input="answerInput(event, stage, number, final)"></answer-input>
- * 解答：correctAnswer['stage1']['q1']
- * answerInput(event, stage, number, final)：
- *          event ：$event
- *          stage ：STAGE名 'stage1'
- *          number：問題番号（数字） 1
- *          final ：最終ステージの場合 'final'
- *********************************************************************************************************/
 const app = Vue.createApp({
   data() {
     /* 初期値を設定します */
@@ -18,15 +8,25 @@ const app = Vue.createApp({
       */
       correctAnswer: {
         stage1: {
-          q1: 'あああ',
+          q1: 'ストップ',
         },
         stage2: {
-          q1: 'いいい',
+          q1: 'backup',
           // q2: 'えええ',
           // q3: 'おおお'
         },
         stage3: {
-          q1: 'ううう',
+          q1: 'しこうさくご',
+          // q2: 'かかか',
+          // q3: 'ききき',,
+        },
+        stage4: {
+          q1: 'orange',
+          // q2: 'かかか',
+          // q3: 'ききき',
+        },
+        stage5: {
+          q1: '43',
           // q2: 'かかか',
           // q3: 'ききき',
         }
@@ -48,6 +48,14 @@ const app = Vue.createApp({
           false, // 3-1
           // false, // 3-2
           // false, // 3-3
+        ],
+        stage4: [
+          false, // 3-1
+          
+        ],
+        stage5: [
+          false, // 3-1
+          
         ]
       },
 
@@ -56,6 +64,8 @@ const app = Vue.createApp({
         stage1: false,
         stage2: false,
         stage3: false,
+        stage4: false,
+        stage5: false,
       },
 
       /* 次のステージを表示するかどうか
@@ -64,6 +74,8 @@ const app = Vue.createApp({
       next: {
         stage1: false,
         stage2: false,
+        stage3: false,
+        stage4: false,
       },
     }
   },
@@ -119,7 +131,9 @@ app.component('answer-input', {
       if(answer === this.correct) { // 入力値が解答と一致する場合
         this.message = this.okMessage;
         this.$emit('answerInput', true);
+        
       } else { // 一致しない場合
+        
         this.message = this.ngMessage; 
         this.$emit('answerInput', false);
       }
