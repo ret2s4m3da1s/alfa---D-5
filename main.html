@@ -301,39 +301,7 @@
             
         </div>
       </div>
-      <div class="stage-column__container section bg-color--keycolor">
-        <div class="container">
-          <h2 class="section-title"><span class="section-title__stage">STAGE：5</span>キーワードを入力</h2>
-          <!-------------------------------------------------------------
-            class名"row"内のclass名"column"が横並びになります。
-            改行する場合は以下のように追加してください。
-            <div class="row">
-              <div class="column">
-                ～ 内容 ～
-              </div>
-            </div>
-          ------------------------------------------------------------->
-          <div class="row">
-
-            <div class="column">
-              <!-- STAGE5問題セクション　ここから -->
-              <figure class="image__container">
-                <img src="assets/images/stage5.png" alt="">
-              </figure>
-              <!-- STAGE5問題セクション　ここまで -->
-              <!-- STAGE5解答入力セクション　ここから -->
-              <answer-input v-bind:correct="correctAnswer['stage5']['q1']" v-on:answer-input="answerInput($event, 'stage5', 1)"></answer-input>
-              <a class="link-hint" href="hint5.html" target="hint5">ヒントをみる ></a>
-              <!-- STAGE5解答入力セクション　ここまで -->
-            </div><!-- /.column -->
-            
-          </div><!-- /.row -->
-
-        </div>
-      </div>
-    </section>
- <!-- STAGE5クリア画面　ここから -->
- <section class="section bg-color--keycolor">
+      <section class="section bg-color--keycolor">
   <div class="container">
     <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>キーワードを入力</h2>
     <!-----------------------------------------------------------------------------------------------------------------
