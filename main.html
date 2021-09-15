@@ -35,7 +35,9 @@
           <div class="container">
             <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：1</span>ゲームを始めよう</h2>
             <p class="text-center">エラー発生<br>
-              パソコンを開くと大量のエラーと怪しいソフトが！、謎を解いてPCを起動させよう</p>
+              友人曰く、まずはシステム警告を止めない限り、先へは進めないらしい
+どんな謎が出てくるのかと聞くと、「ウイルスによって変わるから、答えは友人わからない」そうだ
+</p>
             <p class="text-center">困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。</p>
   
             <div class="container">
@@ -76,9 +78,10 @@
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：１  クリア！</div>
-              <div class="clear-message__content">Correct！<br>
-                エラーをストップさせることができた！<br>
-                次に進んでパソコンの中をチェックしよう！</div>
+              <div class="clear-message__content">謎が解けて一息つこうとしていると、もう次に行けとの指示が
+次は何をするのかと聞くと、ネットワーク切断とバックアップをすると言われた
+そんな難しい横文字を使われてもわからん！
+と、困惑していると、パソコンの画面に『思い出を守ろう』との文字が</div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -99,9 +102,8 @@
             <div class="container">
               <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>を止めろ																		
               </h2>
-              <p class="text-center">ログインすると次々とファイルが暗号化されていた！<br>
-                中には謎と犯人からのメッセージが書かれた画面が映っている<br>
-                これを解くことで、ファイルが元に戻るかもしれない！</p>
+              <p class="text-center">どうやらシステムが難しい手順を勝手に簡略化してくれるらしい
+システムの指示に従って進めていくと、また謎が出てきた</p>
             </div>
           </div>
           <div class="stage-column__container section bg-color--keycolor">
@@ -173,8 +175,9 @@
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：2　クリア！</div>
-              <div class="clear-message__content">Correct!、<br>
-                次のステージの謎を解こう！</div>
+              <div class="clear-message__content">ここまでは順調に進めている
+ここからはいよいよウイルスと戦うためのフェイズに入るらしい
+ここを間違えるとこの先が大変なことになるようなので、真剣に進めていく</div>
                 <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -188,8 +191,9 @@
           <div class="section">
             <div class="container">
               <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>ウイルスの特定をしよう</h2>
-              <p class="text-center">元に戻すためにはウイルスの情報が必要だ
-                謎を解いてウイルスの情報を入手しよう！</p>
+              <p class="text-center">また謎が出てきた
+『君が乗り越えていくには○○○○○○が必要だね！』との文字が
+まさかこの○に当てはまるのが答えなのか...？</p>
                 
             </div>
           </div>
@@ -229,9 +233,11 @@
      <section v-if="clear['stage3']" v-bind:class="{isClear:clear['stage3']}"  class="section section--clear bg-color--gray">
       <div class="container">
         <div class="clear-message">
-          <div class="clear-message__title">STAGE：2　クリア！</div>
-          <div class="clear-message__content">Correct!、<br>
-            次のステージの謎を解こう！</div>
+          <div class="clear-message__title">STAGE：3　クリア！</div>
+          <div class="clear-message__content">いよいよ最後のフェイズに突入！ホッとして気を抜いていると、
+『ウイルスに攻撃or初期化』、どちらを選ぶかという選択肢が出てきた！
+友人に聞いてもこんなもの設定していないという
+決意をしてどちらかの選択肢を選ぶ</div>
             <button v-on:click="nextStage('stage3')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
         </div>
       </div>
@@ -243,7 +249,9 @@
         <div class="section">
           <div class="container">
             <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：4</span>ウイルスの弱点となる色を導き出せ！</h2>
-            <p class="text-center">潜伏しているウイルスを攻撃しよう！謎を解いてウイルスの弱点となる色を解答しよう！</p>
+            <p class="text-center">初期化してデータが消えたら困る！ということで、『ウイルスに攻撃』を選んだ
+ここが重要なフェイズだということは理解している
+緊張を押し殺し、謎に進むとRPG系の謎が登場する</p>
               
           </div>
         </div>
@@ -283,8 +291,11 @@
     <div class="container">
       <div class="clear-message">
         <div class="clear-message__title">STAGE：4　クリア！</div>
-        <div class="clear-message__content">Correct!、<br>
-          次のステージの謎を解こう！</div>
+        <div class="clear-message__content">データを無事に守り切った！
+ほっとしていると画面に花火が打ち上がっている
+どうしたのかと友人に尋ねると、なぜか大喜びしたあと、システムで設定したものだからもう大丈夫だと言われた
+手助してくれた友人にお礼の言葉を言うと、何だか照れくさいのか、いつもと違う反応が返ってきた
+</div>
           <button v-on:click="nextStage('stage4')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
       </div>
     </div>
@@ -297,13 +308,16 @@
       <div class="section">
         <div class="container">
           <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：5</span>PCを初期化しよう！</h2>
-          <p class="text-center">PCを初期化しよう！</p>
+          <p class="text-center">ここまで大変だったのにこれ以上一人で進め切る自信がない！と思い、『初期化する』を選ぶ
+これで思い出とはおさらばだなと悲しくなっていると、まさかのここでも謎が出現した
+嘘でしょ！と反抗したくなる気持ちを抑え、残り時間のことを思い出して謎を解いていく
+</p>
             
         </div>
           </div>
           <div class="stage-column__container section bg-color--keycolor">
             <div class="container">
-              <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>キーワードを入力</h2>
+              <h2 class="section-title"><span class="section-title__stage">STAGE：5</span>キーワードを入力</h2>
               <!-------------------------------------------------------------
                 class名"row"内のclass名"column"が横並びになります。
                 改行する場合は以下のように追加してください。
